@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Tri Dharma Palembang | Portal Resmi Sekolah</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Utility Bar (Khas Website Resmi) -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span>📧 smktridharma2024@gmail.com</span>
+            <span>📞 (0711) 362940</span>
+        </div>
+    </div>
+
+    <!-- Navigasi Utama -->
+    <nav class="navbar">
+        <div class="nav-brand">SMK TRI DHARMA</div>
+        <div class="nav-links">
+            <a href="#beranda" class="active">Beranda</a>
+            <a href="#profil">Profil & Sejarah</a>
+            <a href="#jurusan">Program Keahlian</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn" title="Ganti Tema">🌙</button>
+    </nav>
+
+    <div class="container">
+        <!-- Halaman Beranda / Hero Section -->
+        <section id="beranda" class="card hero">
+            <div class="official-badge">
+                <span>⭐ Terakreditasi A</span>
+                <span>•</span>
+                <span>SK Resmi 2012</span>
+            </div>
+            
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="Logo SMK Tri Dharma Palembang" class="logo">
+            </div>
+
+            <h1 class="school-title">SMK Tri Dharma Palembang</h1>
+            <p class="school-subtitle">Pusat Pendidikan Kejuruan Berkualitas, Berkarakter, & Siap Kerja</p>
+
+            <div class="welcome-box">
+                <div class="welcome-header">
+                    <span class="welcome-icon">🏛️</span>
+                    <h3>Sambutan Kepala Sekolah</h3>
+                </div>
+                <p>Selamat datang di portal resmi SMK Tri Dharma Palembang. Kami berkomitmen penuh mendidik generasi muda yang kompeten, berakhlak mulia, profesional, dan siap menghadapi tantangan dunia kerja modern maupun wirausaha.</p>
+            </div>
+        </section>
+
+        <!-- Profil & Sejarah Resmi -->
+        <section id="profil" class="card">
+            <div class="section-header">
+                <h3>Profil & Sejarah Singkat</h3>
+                <div class="section-line"></div>
+            </div>
+            <div class="profile-content">
+                <p><strong>SMK Tri Dharma Palembang</strong> merupakan salah satu sekolah menengah kejuruan swasta yang berada di bawah naungan Yayasan Pendidikan Tri Dharma. Sekolah ini beralamat di Jalan Jaksa Agung R. Suprapto No. 18, Bukit Besar, Kecamatan Ilir Barat II, Kota Palembang, Sumatera Selatan.</p>
+                
+                <div class="legal-box">
+                    <strong>📄 Legalitas & Operasional Resmi:</strong><br>
+                    SMK Tri Dharma Palembang memiliki izin pendirian dan operasional berdasarkan <strong>Surat Keputusan Nomor 241.3/660-SK/26.8/PN/2012</strong> yang diterbitkan pada tanggal 19 Juni 2012. Sekolah ini didirikan dengan tujuan memberikan pendidikan kejuruan kepada peserta didik agar memiliki pengetahuan, keterampilan, serta kesiapan penuh untuk menghadapi dunia kerja.</p>
+                </div>
+                
+                <p>Dalam perkembangannya, SMK Tri Dharma Palembang menyediakan beberapa program keahlian unggulan yang dirancang selaras dengan kebutuhan dunia industri dan dunia kerja (DUDI).</p>
+
+                <h4 class="sub-heading">Visi Sekolah</h4>
+                <div class="vision-box">
+                    “Sekolah sebagai wadah untuk meningkatkan mutu sumber daya manusia yang berkualitas dan beriman sehingga mampu bersaing di era globalisasi.”
+                </div>
+
+                <h4 class="sub-heading">Misi Sekolah</h4>
+                <ul class="official-list">
+                    <li>Mendidik siswa menjadi manusia yang beriman dan bertakwa kepada Tuhan Yang Maha Esa.</li>
+                    <li>Meningkatkan kedisiplinan, moral, dan kepribadian yang luhur.</li>
+                    <li>Melaksanakan Kegiatan Belajar Mengajar (KBM) sesuai kurikulum nasional dan standar industri.</li>
+                    <li>Mewujudkan lingkungan sekolah yang kondusif, bersih, dan berkarakter.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Data Jurusan Interaktif -->
+        <section id="jurusan" class="card">
+            <div class="section-header">
+                <h3>Program Keahlian (Jurusan)</h3>
+                <div class="section-line"></div>
+            </div>
+            <p class="section-desc">Ketuk pada masing-masing bidang keahlian untuk melihat informasi kurikulum:</p>
+            
+            <div class="jurusan-container">
+                <div class="jurusan-card" onclick="toggleJurusan(this)">
+                    <div class="jurusan-header">
+                        <div class="jurusan-title-wrap">
+                            <span class="jurusan-icon">💻</span>
+                            <h4>1. Teknik Komputer dan Jaringan (TKJ)</h4>
+                        </div>
+                        <span class="arrow-icon">▼</span>
+                    </div>
+                    <div class="jurusan-body">
+                        Mempelajari komputer, jaringan internet, perakitan komputer, instalasi sistem operasi, konfigurasi jaringan, serta perawatan perangkat keras dan perangkat lunak.
+                    </div>
+                </div>
+
+                <div class="jurusan-card" onclick="toggleJurusan(this)">
+                    <div class="jurusan-header">
+                        <div class="jurusan-title-wrap">
+                            <span class="jurusan-icon">📊</span>
+                            <h4>2. Akuntansi dan Keuangan Lembaga (AKL)</h4>
+                        </div>
+                        <span class="arrow-icon">▼</span>
+                    </div>
+                    <div class="jurusan-body">
+                        Mempelajari pencatatan transaksi keuangan, penyusunan laporan keuangan, pengelolaan administrasi keuangan, serta penggunaan aplikasi akuntansi modern.
+                    </div>
+                </div>
+
+                <div class="jurusan-card" onclick="toggleJurusan(this)">
+                    <div class="jurusan-header">
+                        <div class="jurusan-title-wrap">
+                            <span class="jurusan-icon">🏍️</span>
+                            <h4>3. Teknik Sepeda Motor (TSM)</h4>
+                        </div>
+                        <span class="arrow-icon">▼</span>
+                    </div>
+                    <div class="jurusan-body">
+                        Mempelajari perawatan, perbaikan, dan pemeriksaan sepeda motor, termasuk sistem mesin, kelistrikan, transmisi, dan komponen kendaraan roda dua.
+                    </div>
+                </div>
+
+                <div class="jurusan-card" onclick="toggleJurusan(this)">
+                    <div class="jurusan-header">
+                        <div class="jurusan-title-wrap">
+                            <span class="jurusan-icon">📁</span>
+                            <h4>4. Manajemen Perkantoran (MP)</h4>
+                        </div>
+                        <span class="arrow-icon">▼</span>
+                    </div>
+                    <div class="jurusan-body">
+                        Mempelajari administrasi perkantoran, pengelolaan dokumen, pengarsipan digital, surat-menyurat, pelayanan pelanggan, serta pengoperasian aplikasi perkantoran.
+                    </div>
+                </div>
+
+                <div class="jurusan-card" onclick="toggleJurusan(this)">
+                    <div class="jurusan-header">
+                        <div class="jurusan-title-wrap">
+                            <span class="jurusan-icon">🚗</span>
+                            <h4>5. Teknik Kendaraan Ringan (TKR)</h4>
+                        </div>
+                        <span class="arrow-icon">▼</span>
+                    </div>
+                    <div class="jurusan-body">
+                        Mempelajari perawatan dan perbaikan kendaraan ringan (mobil), meliputi sistem mesin, kelistrikan otomotif, sistem rem, kemudi, dan sistem pemindah tenaga.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeri Kegiatan Interaktif -->
+        <section id="galeri" class="card">
+            <div class="section-header">
+                <h3>Galeri & Dokumentasi Sekolah</h3>
+                <div class="section-line"></div>
+            </div>
+            <p class="section-desc">Pilih kategori dokumentasi atau ketuk foto untuk memperbesar:</p>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" onclick="filterGallery('all', this)">Semua Foto</button>
+                <button class="filter-btn" onclick="filterGallery('praktik', this)">Praktik</button>
+                <button class="filter-btn" onclick="filterGallery('kelas', this)">Kelas</button>
+                <button class="filter-btn" onclick="filterGallery('ekstra', this)">Ekstrakurikuler</button>
+                <button class="filter-btn" onclick="filterGallery('lingkungan', this)">Lingkungan</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="praktik" onclick="openModal('Kegiatan1.png', 'Kegiatan Praktik Siswa di Laboratorium / Bengkel Kejuruan')">
+                    <img src="Kegiatan1.png" alt="Praktik Siswa">
+                    <p>Praktik Siswa</p>
+                </div>
+                <div class="gallery-item" data-category="kelas" onclick="openModal('Kegiatan2.png', 'Suasana Proses Belajar Mengajar di Ruang Kelas')">
+                    <img src="Kegiatan2.png" alt="Pembelajaran Kelas">
+                    <p>Pembelajaran Kelas</p>
+                </div>
+                <div class="gallery-item" data-category="ekstra" onclick="openModal('Kegiatan3.png', 'Kegiatan Pelatihan dan Pengembangan Bakat Siswa')">
+                    <img src="Kegiatan3.png" alt="Ekstrakurikuler">
+                    <p>Ekstrakurikuler</p>
+                </div>
+                <div class="gallery-item" data-category="lingkungan" onclick="openModal('Kegiatan4.png', 'Kondisi Lingkungan Asri, Bersih, dan Fasilitas Sekolah')">
+                    <img src="Kegiatan4.png" alt="Lingkungan Sekolah">
+                    <p>Lingkungan Sekolah</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak & Informasi Resmi -->
+        <section id="kontak" class="card">
+            <div class="section-header">
+                <h3>Kontak & Layanan Resmi</h3>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-card-grid">
+                <div class="contact-info">
+                    <span class="contact-icon">📍</span>
+                    <div><strong>Alamat Kampus:</strong><br>Jl. Jaksa Agung R. Suprapto No. 18, Bukit Besar, Kec. Ilir Barat II, Kota Palembang, Sumatera Selatan</div>
+                </div>
+
+                <div class="contact-info">
+                    <span class="contact-icon">📧</span>
+                    <div><strong>Email Resmi Sekolah:</strong><br>smktridharma2024@gmail.com</div>
+                </div>
+
+                <div class="contact-info">
+                    <span class="contact-icon">📞</span>
+                    <div><strong>Nomor Telepon / Fax:</strong><br>(0711) 362940</div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <a href="tel:0711362940" class="btn btn-primary">📞 Hubungi via Telepon</a>
+                <a href="mailto:smktridharma2024@gmail.com" class="btn btn-secondary">📧 Kirim Pesan Email</a>
+            </div>
+        </section>
+
+        <footer class="official-footer">
+            <p><strong>SMK Tri Dharma Palembang</strong></p>
+            <p>&copy; 2026 Hak Cipta Dilindungi Undang-Undang. Portal Resmi Sekolah Kejuruan.</p>
+        </footer>
+    </div>
+
+    <!-- Lightbox Modal Fullscreen -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <!-- Skrip Interaktif -->
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const btn = document.getElementById('themeBtn');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                btn.textContent = '☀️';
+            } else {
+                html.setAttribute('data-theme', 'light');
+                btn.textContent = '🌙';
+            }
+        }
+
+        function toggleJurusan(card) {
+            card.classList.toggle('active');
+        }
+
+        function filterGallery(category, button) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.classList.remove('hide');
+                } else {
+                    item.classList.add('hide');
+                }
+            });
+        }
+
+        function openModal(src, captionText) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            const caption = document.getElementById('modalCaption');
+            modal.style.display = 'flex';
+            modalImg.src = src;
+            caption.textContent = captionText;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 70) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
